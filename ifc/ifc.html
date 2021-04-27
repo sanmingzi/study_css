@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      :root {
+        box-sizing: border-box;
+      }
+      *,
+      ::before,
+      ::after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .margin-padding {
+        margin: 1em;
+        padding: 1em;
+      }
+      .bg-red {
+        background-color: red;
+      }
+      .bg-yellow {
+        background-color: yellow;
+      }
+      .bg-green {
+        background-color: green;
+      }
+      .gb-gray {
+        background-color: gray;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .inline {
+        display: inline;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .clearfix::after {
+        display: table;
+        content: "";
+        clear: both;
+      }
+      .float-left {
+        float: left;
+      }
+      .big {
+        width: 10em;
+        height: 10em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="margin-padding bg-red text-center">
+      我只包含 inline-block
+      <div class="margin-padding bg-yellow inline-block">
+        我是一个 inline-block div
+        <div class="float-left bg-green big">
+          我是一个 float-left div
+        </div>
+      </div>
+    </div>
+
+    <div class="margin-padding bg-red text-center">
+      我只包含 inline
+      <div class="margin-padding bg-yellow inline">
+        我是一个 inline div
+        <div class="float-left bg-green big">
+          我是一个 float-left div
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

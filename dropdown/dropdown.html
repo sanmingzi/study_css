@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="dropdown.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="dropdown">
+        <div class="dropdown__toggle">Main Menu</div>
+        <div class="dropdown__drawer">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown__toggle">Open Menu</div>
+        <div class="dropdown__drawer">
+          Drawer Content
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function addEventToDropdownToggle(toggle) {
+        console.log(toggle);
+        toggle.addEventListener('click', function(event) {
+          event.preventDefault();
+          var dropdown = event.target.parentNode;
+          dropdown.classList.toggle('is-open');
+        });
+      }
+
+      (function() {
+        var toggles = document.querySelectorAll('.dropdown__toggle');
+        toggles.forEach(toggle => addEventToDropdownToggle(toggle));
+      })();
+    </script>
+  </body>
+</html>

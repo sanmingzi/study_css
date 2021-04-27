@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      :root {
+        box-sizing: border-box;
+      }
+
+      *,
+      ::before,
+      ::after {
+        box-sizing: inherit;
+      }
+
+      .min-size {
+        min-width: 10em;
+        min-height: 10em;
+      }
+
+      .border {
+        border: 1px solid;
+      }
+
+      .float-left {
+        float: left;
+      }
+
+      .margin-padding {
+        margin: 1em;
+        padding: 1em;
+      }
+
+      .bg-red {
+        background-color: red;
+      }
+
+      .bg-yellow {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-size border bg-red margin-padding">
+      <div class="min-size border float-left bg-yellow"></div>
+    </div>
+  </body>
+</html>

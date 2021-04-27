@@ -1,0 +1,58 @@
+:root {
+  box-sizing: border-box;
+  --padding: 1em;
+  --margin: 1em;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.margin {
+  margin: var(--margin);
+}
+
+.flow-root {
+  display: flow-root;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.float {
+  float: left;
+  height: 5em;
+  width: 5em;
+  background-color: #ddd;
+}
+
+.bg-greenyellow {
+  background-color: greenyellow;
+}
+
+.margin-padding {
+  margin: 1em;
+  padding: 1em;
+}
+
+.row {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid red;
+  padding: var(--padding);
+}
+
+.col-6 {
+  width: 50%;
+  margin: 0;
+  float: left;
+  border: 1px solid red;
+  padding: 1em;
+}
+
+.border {
+  border: 1px solid red;
+}

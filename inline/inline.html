@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+
+    </style>
+    <link rel="stylesheet" href="inline.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>观察 span 的 margin padding</h2>
+      <span>margin = 0, padding = 0 </span>
+      <span class="padding">margin = 0, padding = 1em</span>
+      <span class="margin">margin = 1em, padding = 0</span>
+      <span class="margin padding">margin = 1em, padding = 1em</span>
+      <br/>
+      <span>margin = 0, padding = 0 </span>
+      <span class="padding">margin = 0, padding = 1em</span>
+      <span class="margin">margin = 1em, padding = 0</span>
+      <span class="margin padding">margin = 1em, padding = 1em</span>
+
+      <h2>观察 button 的 margin padding</h2>
+      <button>Origin</button>
+      <button class="margin">Margin</button>
+      <button class="padding">Padding</button>
+      <button class="margin padding">Margin-Padding</button>
+      <br/>
+      <button>Origin</button>
+      <button class="margin">Margin</button>
+      <button class="padding">Padding</button>
+      <button class="margin padding">Margin-Padding</button>
+
+      <h2>设置两个 button ，观察外边距是否折叠</h2>
+      <button class="margin">Margin</button>
+      <br/>
+      <button class="margin">Margin</button>
+
+      <h2>设置两个 button 为 block ，观察外边距是否折叠</h2>
+      <button class="margin block">Margin-Block</button>
+      <button class="margin block">Margin-Block</button>
+
+      <h2>看看 div 中的匿名 box</h2>
+      <div class="border">
+        Some
+        <p>This is P</p>
+        thing
+        other thing
+      </div>
+
+      <h2>将 p 放在 span 中，看看 span 是否 broken</h2>
+      <span class="border">
+        Some
+        <p>This is p</p>
+        thing
+      </span>
+
+      <h2>inline contain inline-block</h2>
+      <div class="inline margin padding">
+        some text
+        <br/>
+        other text
+        <div class="inline-block bg-gray padding margin">inline-block div</div>
+        another text
+      </div>
+
+      <h2>inline contain inline</h2>
+      <div class="inline margin padding">
+        some text
+        <br/>
+        other text
+        <div class="inline bg-gray padding margin">inline-block div</div>
+        another text
+      </div>
+    </div>
+  </body>
+</html>

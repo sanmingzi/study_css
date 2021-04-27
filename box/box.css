@@ -1,0 +1,60 @@
+:root {
+  box-sizing: border-box;
+  --margin: 1.5em;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+body {
+  border: 1px solid red;
+  background-color: #eee;
+}
+
+header {
+  border-radius: 0.5em;
+  background-color: black;
+  color: #fff;
+  padding: 1em 1.5em;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  background-color: #fff;
+  border-radius: 0.5em;
+  width: 70%;
+  padding: 1em 1.5em;
+}
+
+.sidebar {
+  padding: 1.5em;
+  background-color: #fff;
+  border-radius: 0.5em;
+  margin-left: var(--margin);
+  width: calc(30% - var(--margin));
+  margin-top: 0;
+}
+
+.button-link {
+  display: block;
+  padding: 0.5em;
+  color: #fff;
+  background-color: #0090C9;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.sponsor-link {
+  display: block;
+}

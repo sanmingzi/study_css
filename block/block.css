@@ -1,0 +1,31 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.margin-padding {
+  margin: 1em;
+  padding: 1em;
+}
+
+.big-margin-padding {
+  margin: 10em;
+  padding: 10em;
+}
+
+.border {
+  border: 1px solid;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}

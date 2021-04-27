@@ -1,0 +1,55 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+span {
+  border: 1px solid red;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.margin {
+  margin: 1em;
+}
+
+.padding {
+  padding: 1em;
+}
+
+.big-font-size {
+  font-size: 5em;
+}
+
+.bg-gray {
+  background-color: gray;
+}

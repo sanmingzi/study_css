@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      :root {
+        box-sizing: border-box;
+      }
+
+      *,
+      ::before,
+      ::after {
+        box-sizing: inherit;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .border {
+        border: 1px solid red;
+      }
+
+      .float-left {
+        float: left;
+        width: 10em;
+        height: 10em;
+        background-color: gray;
+        margin: 5em;
+      }
+
+      .bg-greenyellow {
+        background-color: greenyellow;
+      }
+
+      .bg-yellow {
+        background-color: yellow;
+      }
+
+      .flow-root {
+        display: flow-root;
+      }
+
+      .margin-padding{
+        margin: 1em;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border flow-root margin-padding bg-yellow">
+      <div class="border float-left">
+        float inside div2
+      </div>
+      <p class="bg-greenyellow">flow-root div2</p>
+    </div>
+
+    <div class="border margin-padding bg-yellow">
+      <div class="border float-left">
+        float inside div1
+      </div>
+      <p class="bg-greenyellow">div1</p>
+    </div>
+
+    <div class="border flow-root margin-padding bg-yellow">
+      <div class="border float-left">
+        float inside div2
+      </div>
+      <p class="bg-greenyellow">flow-root div2</p>
+    </div>
+  </body>
+</html>

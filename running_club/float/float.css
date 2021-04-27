@@ -1,0 +1,74 @@
+:root {
+  box-sizing: border-box;
+  --margin: 1em;
+  --padding: 1em;
+  --radius: 0.5em;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ccc;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  color: white;
+  border-radius: var(--radius);
+  padding: var(--padding);
+}
+
+main {
+  display: flow-root;
+  margin: var(--margin) 0;
+  padding: var(--padding);
+  border-radius: var(--radius);
+  background-color: #fff;
+}
+
+.row {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 var(--margin);
+}
+
+.media {
+  float: left;
+  margin: 0 var(--margin) 0 0;
+  padding: var(--padding);
+  width: calc(50% - var(--margin));
+  border-radius: var(--radius);
+  background-color: gray;
+  color: black;
+}
+
+.media-image {
+  float: left;
+  margin-right: var(--margin);
+}
+
+.media-body {
+  margin-top: 0;
+  display: flow-root;
+}
+
+.media-body h4 {
+  margin-top: 0;
+}
+
+.footer {
+  color: #666;
+  background-color: #ccc;
+  text-align: center;
+  font-size: 0.8em;
+}

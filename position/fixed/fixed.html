@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="fixed.css" type="text/css">
+    <script src="fixed.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-banner-inner">
+        <p>
+          Find out what's  going on at Wombat Coffee each month.
+          Sign up for our newsletter:
+          <button id="open" onclick="openModal()">Sign Up</button>
+        </p>
+      </div>
+    </header>
+    <div class="modal" id="modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-body">
+        <button id="close" class="modal-close" onclick="closeModal()">Close</button>
+        <h2>Wombat newsletter</h2>
+        <p>
+          Sign up for our monthly newsletter. No spam.
+          We promise!
+        </p>
+        <form>
+          <p>
+            <label for="email">Email</label>
+            <input type="text" name="email" />
+          </p>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

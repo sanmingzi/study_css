@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bfc.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="flow-root bg-greenyellow margin-padding">
+        <div class="float">float div</div>
+        flow-root div 能够包含 float div
+      </div>
+
+      <div class="flow-root bg-greenyellow margin-padding">
+        <h2>我是一个自带 margin 的 h2</h2>
+        flow-root 能够将 h2 的 margin 也包含在里面
+      </div>
+
+
+      <div class="row">
+        <h2>BFC 与其周围元素的 margin</h2>
+        <div class="col-6">
+          <div class="border margin">div</div>
+          <div class="inline-block margin border">
+            inline-block div
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="border margin border">div</div>
+          <div class="margin border">
+            block div
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

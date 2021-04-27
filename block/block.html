@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="block.css" type="text/css">
+  </head>
+  <body>
+    <h2>div contain inline items</h2>
+    <div class="margin-padding border">
+      <div class="inline margin-padding">inline div1</div>
+      <div class="inline margin-padding">inline div2</div>
+      <div class="inline margin-padding">inline div3</div>
+    </div>
+
+    <h2>div container inline-block items</h2>
+    <div class="margin-padding border">
+      <div class="inline-block margin-padding">inline-block div</div>
+      <div class="inline-block margin-padding">inline-block div</div>
+      <div class="inline-block margin-padding">inline-block div</div>
+    </div>
+
+    <h2>div contain block and inline items</h2>
+    <div class="margin-padding border">
+      some eeeeee eeeeeee eeeeeee eeeeee eeeeeee eeeeee eeeeeeee eeeeeeeee eeeeeeeeee eeeeeeeeee eeeeeeeee eeeeeeee eeeeeeeee eeeeeeeeeee eeeeeeeeeee eeeeeeee eeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      <span class="border">some eeeeee eeeeeee eeeeeee eeeeee eeeeeee eeeeee eeeeeeee eeeeeeeee eeeeeeeeee eeeeeeeeee eeeeeeeee eeeeeeee eeeeeeeee eeeeeeeeeee eeeeeeeeeee eeeeeeee eeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>
+      <span>span1</span>
+      <div class="margin-padding border">div1</div>
+      <span>span2</span>
+      text
+    </div>
+
+    <ul class="margin-padding border">
+      <li>div only contain inline item, just like IFC, the margin / padding of vertical doesn't work</li>
+      <li>div contain block and inline items, div will generate anonymous line box to contain the inline items</li>
+    </ul>
+  </body>
+</html>

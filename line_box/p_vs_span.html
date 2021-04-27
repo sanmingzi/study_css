@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      :root {
+        box-sizing: border-box;
+      }
+
+      *,
+      ::before,
+      ::after {
+        box-sizing: inherit;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .half-side {
+        width: 50%;
+        float: left;
+        min-height: 10em;
+        border: 1px solid;
+        padding: 1em;
+      }
+      .border {
+        border: 1px solid;
+      }
+
+      .row {
+        display: inline-block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>p vs span</h1>
+        <div class="half-side">
+          <h3>p</h3>
+          <p class="border">
+            CSS is the language we use to style an HTML document.
+
+            CSS describes how HTML elements should be displayed.
+
+            This tutorial will teach you CSS from basic to advanced.
+
+            CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+          </p>
+        </div>
+
+        <div class="half-side">
+          <h3>span</h3>
+          <span class="border">
+            CSS is the language we use to style an HTML document.
+
+            CSS describes how HTML elements should be displayed.
+
+            This tutorial will teach you CSS from basic to advanced.
+
+            CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+          </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="half-side">
+          <p class="border">
+            some
+            CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+            <span>span</span>
+            text
+          </p>
+        </div>
+
+        <div class="half-side">
+          <span class="border">
+            some
+            CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+            <span>span</span>
+            text
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      :root {
+        box-sizing: border-box;
+      }
+
+      *,
+      ::before,
+      ::after {
+        box-sizing: inherit;
+      }
+
+      .absolute {
+        position: absolute;
+      }
+
+      .ab-top-left {
+        top: 0;
+        left: 0;
+      }
+
+      .ab-top-right {
+        top: 0;
+        right: 0;
+      }
+
+      .border {
+        border: 1px solid;
+      }
+
+      .margin-padding {
+        margin: 1em;
+        padding: 1em;
+      }
+
+      .small {
+        width: 10em;
+        height: 10em;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>find the containing block of absolute</h2>
+    <h2>the ancestor is inline</h2>
+    <span class="absolute border">
+      this is an absolute span ceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeb
+      <div class="absolute border ab-top-left">
+        this is an absolute top-left div inside span
+      </div>
+      <div class="absolute border ab-top-right">
+        this is an absolute top-right div inside span
+      </div>
+    </span>
+
+    <h2>the ancestor is block</h2>
+    <div class="absolute border margin-padding small">
+      <div class="absolute border ab-top-left">
+        this is an absolute top-left div inside div
+      </div>
+      <div class="absolute border ab-top-right">
+        this is an absolute top-right div inside div
+      </div>
+    </div>
+  </body>
+</html>

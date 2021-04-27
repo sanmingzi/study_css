@@ -1,0 +1,36 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 1000vh;
+}
+
+.sidebar {
+  position: sticky;
+  top: 1em;
+}
+
+.submenu {
+  background-color: #eee;
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  padding: 0.5em 1.5em;
+  border: 1px solid #999;
+  display: inline-block;
+}
+
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  color: #369;
+}

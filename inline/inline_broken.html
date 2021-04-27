@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      :root {
+        box-sizing: border-box;
+      }
+
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .inline {
+        display: inline;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+
+      .border {
+        border: 1px solid red;
+      }
+
+      .margin-padding {
+        margin: 1em;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>inline contain inline, inline not broken</h1>
+      <div class="inline border">
+        <div class="inline margin-padding">div</div>
+        some
+        <div class="inline margin-padding">div</div>
+        text
+        <div class="inline margin-padding">div</div>
+      </div>
+
+      <h1>inline contain inline-block, inline not broken</h1>
+      <div class="inline-block border">
+        <div class="inline-block margin-padding border">div</div>
+        some
+        <div class="inline-block margin-padding border">div</div>
+        text
+        <div class="inline-block margin-padding border">div</div>
+      </div>
+
+      <h1>inline contain block, inline broken</h1>
+      <div class="inline border">
+        <p>p</p>some<p>p</p>text<p>p</p>
+      </div>
+
+      <h1>inline item too long</h1>
+      <div class="inline border" >
+        CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS
+        CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS
+      </div>
+
+      <ul class="margin-padding border">
+        <li>inline 中包含 display:inline 的 block，该 block 的上下 margin / padding 不影响行高，不影响 inline 与其外面的元素的布局</li>
+        <li>inline 中包含 display:inline-block 的 inline-block，该 block 的上下 margin / padding 不影响行高，但是会影响 inline 与其外面的元素的布局 </li>
+        <li>inline 中包含 block，此时 inline broken，并且在 broken 的位置 margin / padding / border 不生效</li>
+      </ul>
+    </div>
+  </body>
+</html>
