@@ -1,0 +1,27 @@
+:root {
+  box-sizing: border-box;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+}
+.sit-nav {
+  background-color: black;
+  list-style-type: none;
+  display: flex;
+  padding: 1em;
+  padding-left: 0;
+}
+.sit-nav a {
+  display: block;
+  padding: 0.5em 1em;
+  background-color: #ccc;
+  text-decoration: none;
+  color: white;
+  margin-left: 1em;
+}
+.nav-right {
+  margin-left: auto;
+}
